@@ -6,10 +6,7 @@ target 'CST495-Assignment-1' do
   use_frameworks!
 
   # Pods for CST495-Assignment-1
-  pod 'Alamofire', '~> 4.4'
-  # Add additional dependencies
-  pod 'OAuthSwift', '~> 1.1.0'
-  pod 'OAuthSwiftAlamofire'
+  pod 'AlamofireImage', '~> 3.1' 
 
   target 'CST495-Assignment-1Tests' do
     inherit! :search_paths

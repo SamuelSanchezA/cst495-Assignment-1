@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		4A642F83A310FCB9DB610660 /* Pods_CST495_Assignment_1Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30962BC22203238948BC54E7 /* Pods_CST495_Assignment_1Tests.framework */; };
 		7E3AD77720240D0A00FCC502 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3AD77620240D0A00FCC502 /* AppDelegate.swift */; };
-		7E3AD77920240D0A00FCC502 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3AD77820240D0A00FCC502 /* ViewController.swift */; };
 		7E3AD77C20240D0A00FCC502 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E3AD77A20240D0A00FCC502 /* Main.storyboard */; };
 		7E3AD77E20240D0A00FCC502 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E3AD77D20240D0A00FCC502 /* Assets.xcassets */; };
 		7E3AD78120240D0A00FCC502 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E3AD77F20240D0A00FCC502 /* LaunchScreen.storyboard */; };
 		7E3AD78C20240D0A00FCC502 /* CST495_Assignment_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3AD78B20240D0A00FCC502 /* CST495_Assignment_1Tests.swift */; };
 		7E3AD79720240D0A00FCC502 /* CST495_Assignment_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3AD79620240D0A00FCC502 /* CST495_Assignment_1UITests.swift */; };
+		7E3AD7A72024144600FCC502 /* NowPlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3AD7A62024144600FCC502 /* NowPlayingViewController.swift */; };
+		7E3AD7A9202419DA00FCC502 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3AD7A8202419DA00FCC502 /* MovieTableViewCell.swift */; };
 		86C1C832975DD22979A34010 /* Pods_CST495_Assignment_1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC8CD92DCCCAA0F040B81C0 /* Pods_CST495_Assignment_1.framework */; };
 		9E8824141480464547F26E58 /* Pods_CST495_Assignment_1UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2BF3CEB9B2166C51D034BAF /* Pods_CST495_Assignment_1UITests.framework */; };
 /* End PBXBuildFile section */
@@ -46,7 +47,6 @@
 		635946C721801CA2C7F2E624 /* Pods-CST495-Assignment-1Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CST495-Assignment-1Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CST495-Assignment-1Tests/Pods-CST495-Assignment-1Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		7E3AD77320240D0A00FCC502 /* CST495-Assignment-1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CST495-Assignment-1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E3AD77620240D0A00FCC502 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7E3AD77820240D0A00FCC502 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7E3AD77B20240D0A00FCC502 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7E3AD77D20240D0A00FCC502 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E3AD78020240D0A00FCC502 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,6 +57,8 @@
 		7E3AD79220240D0A00FCC502 /* CST495-Assignment-1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CST495-Assignment-1UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E3AD79620240D0A00FCC502 /* CST495_Assignment_1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CST495_Assignment_1UITests.swift; sourceTree = "<group>"; };
 		7E3AD79820240D0A00FCC502 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E3AD7A62024144600FCC502 /* NowPlayingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingViewController.swift; sourceTree = "<group>"; };
+		7E3AD7A8202419DA00FCC502 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		A2BF3CEB9B2166C51D034BAF /* Pods_CST495_Assignment_1UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CST495_Assignment_1UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD448BAADA6B4123B5FD397D /* Pods-CST495-Assignment-1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CST495-Assignment-1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CST495-Assignment-1/Pods-CST495-Assignment-1.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,7 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				7E3AD77620240D0A00FCC502 /* AppDelegate.swift */,
-				7E3AD77820240D0A00FCC502 /* ViewController.swift */,
+				7E3AD7A62024144600FCC502 /* NowPlayingViewController.swift */,
+				7E3AD7A8202419DA00FCC502 /* MovieTableViewCell.swift */,
 				7E3AD77A20240D0A00FCC502 /* Main.storyboard */,
 				7E3AD77D20240D0A00FCC502 /* Assets.xcassets */,
 				7E3AD77F20240D0A00FCC502 /* LaunchScreen.storyboard */,
@@ -378,14 +381,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CST495-Assignment-1/Pods-CST495-Assignment-1-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/OAuthSwift/OAuthSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/OAuthSwiftAlamofire/OAuthSwiftAlamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OAuthSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OAuthSwiftAlamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -462,8 +463,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E3AD77920240D0A00FCC502 /* ViewController.swift in Sources */,
+				7E3AD7A72024144600FCC502 /* NowPlayingViewController.swift in Sources */,
 				7E3AD77720240D0A00FCC502 /* AppDelegate.swift in Sources */,
+				7E3AD7A9202419DA00FCC502 /* MovieTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
