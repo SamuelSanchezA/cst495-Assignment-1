@@ -60,10 +60,15 @@
                                 </prototypes>
                                 <sections/>
                             </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" id="j6Y-x6-0ag">
+                                <rect key="frame" x="177" y="323" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="j6Y-x6-0ag" id="WyM-Ir-PR4"/>
                         <outlet property="movieTableView" destination="p1M-RH-FzG" id="KbE-aF-9Xe"/>
                     </connections>
                 </viewController>
