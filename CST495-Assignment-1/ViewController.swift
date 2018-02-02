@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Alamofire
+import OAuthSwift
+import OAuthSwiftAlamofire
 
 class ViewController: UIViewController {
 
