@@ -17,7 +17,7 @@ The following **stretch** user stories are implemented:
 
 - [x] User sees an alert when there's a networking error (+1pt)
 - [ ] User can search for a movie (+3pt)
-- [ ] While poster is being fetched, user see's a placeholder image (+1pt)
+- [x] While poster is being fetched, user see's a placeholder image (+1pt)
 - [ ] User sees image transition for images coming from network, not when it is loaded from cache (+1pt)
 - [ ] Customize the selection effect of the cell (+1pt)
 - [ ] For the large poster, load the low resolution image first and then switch to the high resolution image when complete (+2pt)
@@ -35,13 +35,14 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+[Alt Text](https://github.com/SamuelSanchezA/cst495-Assignment-1/blob/master/assignment-1.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
 Describe any challenges encountered while building the app.
+Getting the positioning of the pictures right along with actually getting the table cells to show all the conent rather than a cutoff image was quite challenging. 
 
 ## License
 
