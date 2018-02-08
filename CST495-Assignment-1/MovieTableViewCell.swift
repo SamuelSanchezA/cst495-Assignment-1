@@ -14,8 +14,12 @@ class MovieTableViewCell: UITableViewCell {
     @IBOutlet var movieTitleLabel: UILabel!
     @IBOutlet var movieOverviewLabel: UILabel!
     
+    // For detailed view
+    var movieBackdropImageView: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.selectionStyle = .none
         // Initialization code
     }
 

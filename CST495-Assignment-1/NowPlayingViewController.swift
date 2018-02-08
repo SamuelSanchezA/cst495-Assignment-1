@@ -92,7 +92,17 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource{
         let posterURL = URL(string: baseURLString + posterPathString)!
         cell.movieImageView.af_setImage(withURL: posterURL)
         
+        
+        
         return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destVC = segue.destination as! DetailedMovieViewController
+        let senderCell = sender as! MovieTableViewCell
+        if let indexPath = movieTableView.indexPath(for: senderCell){
+            destVC.movie = movies[indexPath.row]
+        }
     }
     
     /*
