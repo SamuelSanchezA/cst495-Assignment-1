@@ -78,7 +78,7 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell", for: indexPath) as! MovieTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell", for: indexPath) as! MovieCell
         let movie = movies[indexPath.row]
         let title = movie["title"] as! String
         let overview = movie["overview"] as! String
@@ -99,7 +99,7 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource{
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destVC = segue.destination as! DetailedMovieViewController
-        let senderCell = sender as! MovieTableViewCell
+        let senderCell = sender as! MovieCell
         if let indexPath = movieTableView.indexPath(for: senderCell){
             destVC.movie = movies[indexPath.row]
         }
