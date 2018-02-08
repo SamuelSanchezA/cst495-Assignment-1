@@ -21,7 +21,7 @@ class SuperHeroViewController: UIViewController, UICollectionViewDataSource {
         super.viewDidLoad()
         activityIndicator.startAnimating()
         collectionView.dataSource = self
-        
+        self.title = "Superhero"
         let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
         layout.minimumInteritemSpacing = 5
         layout.minimumLineSpacing = layout.minimumInteritemSpacing

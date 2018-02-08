@@ -21,7 +21,6 @@ class DetailedMovieViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Movies"
         if let movie = movie{
             let baseURLString = "https://image.tmdb.org/t/p/w500"
             let moviePosterPath = movie["poster_path"] as! String
@@ -34,7 +33,16 @@ class DetailedMovieViewController: UIViewController {
         }
         // Do any additional setup after loading the view.
     }
-
+    
+    @IBAction func showTrailer(_ sender: Any) {
+        performSegue(withIdentifier: "movieTrailerSegue", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        var destVC = segue.destination as! MovieTrailerViewController
+        destVC.movie = movie
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
