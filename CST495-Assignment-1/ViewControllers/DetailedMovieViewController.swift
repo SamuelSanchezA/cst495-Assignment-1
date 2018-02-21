@@ -17,20 +17,15 @@ class DetailedMovieViewController: UIViewController {
     @IBOutlet var movieReleaseDateLabel: UILabel!
     @IBOutlet var movieOverviewLabel: UILabel!
     
-    var movie: [String: Any]?
+    var movie: Movie!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let movie = movie{
-            let baseURLString = "https://image.tmdb.org/t/p/w500"
-            let moviePosterPath = movie["poster_path"] as! String
-            let movieBannerPath = movie["backdrop_path"] as! String
-            movieTitleLabel.text = movie["title"] as? String
-            movieOverviewLabel.text = movie["overview"] as? String
-            movieReleaseDateLabel.text = movie["release_date"] as? String
-            moviePosterImageView.af_setImage(withURL: URL(string: baseURLString + moviePosterPath)!)
-            movieBannerImageView.af_setImage(withURL: URL(string: baseURLString + movieBannerPath)!)
-        }
+        movieTitleLabel.text = movie.title
+        movieOverviewLabel.text = movie.overview
+        movieReleaseDateLabel.text = movie.releaseDate
+        moviePosterImageView.af_setImage(withURL: movie.posterUrl!)
+        movieBannerImageView.af_setImage(withURL: movie.backdropUrl!)
         // Do any additional setup after loading the view.
     }
     

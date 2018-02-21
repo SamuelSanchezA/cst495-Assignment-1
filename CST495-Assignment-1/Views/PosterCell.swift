@@ -10,5 +10,9 @@ import UIKit
 
 class PosterCell: UICollectionViewCell {
     @IBOutlet weak var moviePosterImageView: UIImageView!
-    
+    var movie: Movie! {
+        didSet{
+            moviePosterImageView.af_setImage(withURL: movie.posterUrl!)
+        }
+    }
 }
